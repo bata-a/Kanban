@@ -1,48 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp"
-    tools:context=".RecoverAccountFragment">
+    android:orientation="vertical">
 
-    <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Recuperar Senha"
-    android:textSize="24sp"
-    android:textStyle="bold"
-    android:layout_marginBottom="32dp"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
 
-    <EditText
-        android:id="@+id/edit_text_recover_email"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="E-mail ou Usuário"
-        android:inputType="textEmailAddress"
-        android:padding="12dp"
-        android:layout_marginBottom="24dp"
-        android:background="@android:drawable/editbox_background"/>
+        android:padding="24dp"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button_send_recovery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Enviar"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email" />
 
-    <TextView
-        android:id="@+id/text_view_back_to_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lembrei a senha, fazer Login"
-        android:textColor="@color/design_default_color_primary"
-        android:textStyle="bold"
-        android:padding="8dp"
-        android:clickable="true"
-        android:focusable="true"/>
+        <Button
+            android:id="@+id/buttonRecover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send" />
+
+    </LinearLayout>
 
 </LinearLayout>

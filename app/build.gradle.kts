@@ -1,23 +1,18 @@
-
-
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
 }
 
 android {
-    namespace = "com.example.hello"
-    compileSdk = 35
-
-    buildFeatures {
-        viewBinding = true
-        dataBinding = true
+    namespace = "com.example.mrt"
+    compileSdk {
+        version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.example.hello"
+        applicationId = "com.example.mrt"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -40,10 +35,12 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
