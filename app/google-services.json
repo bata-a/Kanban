@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "881976172666",
+    "project_id": "mrt1-cd4b0",
+    "storage_bucket": "mrt1-cd4b0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881976172666:android:97b4db056b9b310c951bc3",
+        "android_client_info": {
+          "package_name": "com.example.mrt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJbCG8tXKcTxDFVsCn0GXoTT2v3BhcW9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
